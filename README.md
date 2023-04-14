@@ -5,24 +5,22 @@
 
 
 # Login Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/loginscreen.jpeg width="48")
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/loginscreen.jpeg" width="250">
 
 
 # Order Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/ordertab.jpeg width="48")
-
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/ordertab.jpeg" width="250">
 
 # Store Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/storetab.jpeg width="48")
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/storetab.jpeg" width="250">
 
 
 # Message tab 1 Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/messagetab.jpeg width="48")
-
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/messagetab.jpeg" width="250">
 
 # Message tab 2 Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/messagetab2.jpeg width="48")
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/messagetab2.jpeg" width="250">
 
 
 # Profile Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/profiletab.jpeg width="48")
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/profiletab.jpeg" width="250">
