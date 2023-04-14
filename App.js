@@ -10,7 +10,7 @@ export default function App() {
   return (
     <FontContextProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName='TabNavigation' screenOptions={{headerShown: false}}>
+        <Stack.Navigator initialRouteName='StartScreen' screenOptions={{headerShown: false}}>
           <Stack.Screen  name="StartScreen" component={StartScreen} />
           <Stack.Screen  name="Login" component={Login} />
           <Stack.Screen  name="TabNavigation" component={TabNavigation} />
