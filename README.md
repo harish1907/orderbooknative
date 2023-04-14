@@ -1,8 +1,7 @@
 # orderbooknative
 
 # Start Screen
-![alt text](https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/startscreentab.jpeg width="48")
-<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/startscreentab.jpeg" width="150" height="280">
+<img src="https://github.com/harish1907/orderbooknative/blob/main/src/Images/uiScreenShot/startscreentab.jpeg" width="250">
 
 
 # Login Screen
