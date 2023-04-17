@@ -14,7 +14,8 @@ export default function CustomInput(props) {
             style={[
                     styles.textInputStyle, 
                     {fontFamily: "Roboto-Regular"}, 
-                    isFocused && styles.inputFocused
+                    props.selectionColor !== "#E4E4E4" && isFocused && styles.inputFocused,
+                    props.style
                   ]}
             selectionColor={"#4B84F1"}
             onFocus={() => setIsFocused(true)}

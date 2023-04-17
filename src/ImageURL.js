@@ -33,7 +33,10 @@ const ImageURL = {
     question: require("./Images/question.png"),
     signout: require("./Images/signout.png"),
 
-    homeHeaderImg: require("./Images/homeHeaderImg.png")
+    homeHeaderImg: require("./Images/homeHeaderImg.png"),
+    moonIcon: require("./Images/moonIcon.png"),
+    searchIcon: require("./Images/searchIcon.png"),
+    calenderIcon: require("./Images/calenderIcon.png")
 }
 
 export default ImageURL;
