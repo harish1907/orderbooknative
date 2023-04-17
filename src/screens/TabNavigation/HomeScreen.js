@@ -3,9 +3,11 @@ import {FontContext} from '../../context/FontContext';
 import { useContext } from 'react';
 import ImageURL from '../../ImageURL';
 import { SwiperFlatList } from 'react-native-swiper-flatlist';
-import { ScrollView } from 'react-native-gesture-handler';
+import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import CustomInput from '../../components/CustomInput';
-import ButtonCom from '../../components/ButtonCom'
+import ButtonCom from '../../components/ButtonCom';
+import AvilableCity from '../../components/AvilableCity';
+import PaymentComponent from '../../components/PaymentComponent'
 
 const {width} = Dimensions.get("window");
 
@@ -16,7 +18,7 @@ export default function HomeScreen() {
     <>
       {fontsLoaded && 
         <View style={styles.mainBox}>
-          <ScrollView>
+          <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.swipperView}> 
               <SwiperFlatList
                 index={2}
@@ -72,8 +74,12 @@ export default function HomeScreen() {
                   </View>
                 </View>
 
-                <Text style={[styles.smallText, fontsLoaded && {fontFamily: "Roboto-Regular"}]}>Check-in starts from 14:00</Text>
-                <Text style={[styles.smallText, fontsLoaded && {fontFamily: "Roboto-Regular"}]}>Check out Tue, <Text style={[fontsLoaded && {fontFamily: "Roboto-Bold"}]}>29 Sept 2020</Text> before 12:00pm</Text>
+                <Text style={[styles.smallText, fontsLoaded && {fontFamily: "Roboto-Regular"}]}>
+                  Check-in starts from 14:00
+                </Text>
+                <Text style={[styles.smallText, fontsLoaded && {fontFamily: "Roboto-Regular"}]}>
+                  Check out Tue, <Text style={[styles.screenTextStyle , fontsLoaded && {fontFamily: "Roboto-Bold"}]}>29 Sept 2020</Text> before 12:00pm
+                </Text>
 
                 <ButtonCom
                   title="CHECK AVAILABILITY"
@@ -81,6 +87,36 @@ export default function HomeScreen() {
                 />
               </View>
 
+            </View>
+
+            <View style={styles.avilableCityBox}>
+              <Text style={[styles.contentHeadingStyle, fontsLoaded && {fontFamily: "Roboto-Bold"}]}>
+                Available cities
+              </Text>
+
+              <FlatList
+                keyExtractor={(item) => item}
+                data={colors}
+                horizontal={true}
+                renderItem={({item}) => 
+                  <AvilableCity key={`${item}`}/>
+                }
+              />
+            </View>
+
+            <View style={styles.avilableCityBox}>
+              <Text style={[styles.contentHeadingStyle, fontsLoaded && {fontFamily: "Roboto-Bold"}]}>
+                Payment options
+              </Text>
+
+              <FlatList
+                keyExtractor={(item) => item}
+                data={colors}
+                horizontal={true}
+                renderItem={({item}) => 
+                  <PaymentComponent key={`${item}`}/>
+                }
+              />
             </View>
           </ScrollView>
         </View>
@@ -154,5 +190,9 @@ const styles = StyleSheet.create({
   },
   smallText: {
     color: "#515252"
-  }
+  },
+  avilableCityBox: {
+    marginLeft: 15,
+    marginTop: -10
+  },
 })

@@ -36,7 +36,12 @@ const ImageURL = {
     homeHeaderImg: require("./Images/homeHeaderImg.png"),
     moonIcon: require("./Images/moonIcon.png"),
     searchIcon: require("./Images/searchIcon.png"),
-    calenderIcon: require("./Images/calenderIcon.png")
+    calenderIcon: require("./Images/calenderIcon.png"),
+    dummy1: require("./Images/dummy1.png"),
+    dummy2: require("./Images/dummy2.png"),
+    dummy3: require("./Images/dummy3.png"),
+
+    cityIcon: require("./Images/cityIcon.png")
 }
 
 export default ImageURL;
